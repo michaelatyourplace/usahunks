@@ -1,74 +1,336 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Live Strip Show Experience</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Toronto male strippers and entertainment - USA Hunks provides professional male entertainers for bachelorette parties, birthdays, and special events in Toronto, Ontario.">
+    <title>Toronto Male Strippers | USA Hunks Toronto - Professional Entertainment</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <style>
+        :root {
+            --primary-color: #c41e3a;
+            --secondary-color: #1a1a1a;
+            --accent-gold: #d4af37;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+        }
+        
+        .page-header {
+            background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);
+            color: white;
+            padding: 80px 0 60px;
+        }
+        
+        .page-title {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        
+        .service-card {
+            background: white;
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            height: 100%;
+            padding: 40px 30px;
+            text-align: center;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+        }
+        
+        .service-icon {
+            font-size: 4rem;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+        }
+        
+        .service-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--secondary-color);
+        }
+        
+        .service-description {
+            color: #666;
+            font-size: 1.05rem;
+            line-height: 1.7;
+        }
+        
+        .features-list {
+            background: #f8f9fa;
+            padding: 50px 0;
+        }
+        
+        .feature-item {
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--accent-gold);
+            margin-bottom: 1rem;
+        }
+        
+        .cta-box {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 50px;
+            border-radius: 15px;
+            text-align: center;
+            margin: 50px 0;
+        }
+        
+        .btn-primary-custom {
+            background-color: var(--accent-gold);
+            border: none;
+            color: var(--secondary-color);
+            padding: 15px 40px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .btn-primary-custom:hover {
+            background-color: #ffd700;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(212, 175, 55, 0.4);
+        }
+        
+        @media (max-width: 768px) {
+            .page-title {
+                font-size: 2rem;
+            }
+            
+            .service-icon {
+                font-size: 3rem;
+            }
+            
+            .service-title {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
 </head>
-<nav class="navbar navbar-expand-lg navbar-light bg-white px-md-5 pt-3 pb-3">
- 
-  <a class="navbar-brand" href="index.html">
-       <img alt="" src="/bachelorette4.jpeg" id="" data-test-source="" data-test-pro-id="" data-test-pro-name="" data-test="" title="  Strippers" alt="bachelorette party"  width="150px"  >
-     </a>
-
-
- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-   <span class="navbar-toggler-icon"></span>
- </button>
-
- <div class="collapse navbar-collapse" id="navbarSupportedContent">
-   <ul class="navbar-nav ml-auto">
-       <li class="mt-2  nav-item pr-md-4"><a  class="nav-link allShow   " href="index.html"  rel="nofollow">Home</a></li>
-       <li class="mt-2  nav-item pr-md-4"><a  class="nav-link allShow   " href="reviews.html"  rel="nofollow">reviews</a></li>
-       <li class="mt-2  nav-item pr-md-4"><a  class="nav-link allShow   " href="about.html"  rel="nofollow">About</a></li>
-       <li class="mt-2  nav-item pr-md-4"><a  class="nav-link allShow   " href="services.html"  rel="nofollow">Services</a></li>
-       <li class="mt-2  nav-item pr-md-4"><a  class="nav-link allShow   " href="torontoHunks.html"  rel="nofollow">Hunks</a></li>
-       <li class="mt-2  nav-item pr-md-4"><a  class="nav-link allShow   " href="contact.html"  rel="nofollow">Contact</a></li>
-   </ul> 
- </div>
-</nav>
 <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-4" href="/">
+                <i class="bi bi-star-fill text-warning"></i> USA HUNKS
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/reviews">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-warning ms-lg-2" href="#contact">Book Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
- 
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container text-center">
+            <h1 class="page-title">Toronto Male Strippers</h1>
+            <p class="lead">Professional Entertainment in Toronto, Ontario</p>
+        </div>
+    </section>
 
-  <header class="bg-danger text-white text-center py-5">
+    <!-- Services Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4 py-4">
+                <!-- Bachelorette Parties -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <i class="bi bi-calendar-heart service-icon"></i>
+                        <h2 class="service-title">Bachelorette Parties</h2>
+                        <p class="service-description">Make her last night out unforgettable with our professional entertainers. Customized performances that create lasting memories for the bride-to-be and her crew.</p>
+                    </div>
+                </div>
+
+                <!-- Birthday Celebrations -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <i class="bi bi-gift service-icon"></i>
+                        <h2 class="service-title">Birthday Celebrations</h2>
+                        <p class="service-description">Turn any birthday into an extraordinary event. Our performers bring energy, excitement, and personalized entertainment to make the day truly special.</p>
+                    </div>
+                </div>
+
+                <!-- Special Events -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <i class="bi bi-stars service-icon"></i>
+                        <h2 class="service-title">Special Events</h2>
+                        <p class="service-description">Girls' nights out, divorce parties, corporate events, or any celebration. We deliver premium entertainment tailored to your occasion.</p>
+                    </div>
+                </div>
+
+                <!-- Private Parties -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <i class="bi bi-house-heart service-icon"></i>
+                        <h2 class="service-title">Private Parties</h2>
+                        <p class="service-description">Intimate gatherings at your home or venue. Professional performers who respect your space while delivering top-tier entertainment.</p>
+                    </div>
+                </div>
+
+                <!-- Group Events -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <i class="bi bi-people service-icon"></i>
+                        <h2 class="service-title">Group Events</h2>
+                        <p class="service-description">Large parties, club events, and public celebrations. Our entertainers know how to work a crowd and keep the energy high.</p>
+                    </div>
+                </div>
+
+                <!-- Custom Shows -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <i class="bi bi-lightning service-icon"></i>
+                        <h2 class="service-title">Custom Shows</h2>
+                        <p class="service-description">Themed performances and special requests welcome. Tell us your vision and we'll create a customized show just for you.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-list">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-6 fw-bold">What's Included</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-6">
+                    <div class="feature-item">
+                        <i class="bi bi-shield-check feature-icon"></i>
+                        <h4 class="h6">Professional Performers</h4>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="feature-item">
+                        <i class="bi bi-clock feature-icon"></i>
+                        <h4 class="h6">On-Time Arrival</h4>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="feature-item">
+                        <i class="bi bi-music-note-beamed feature-icon"></i>
+                        <h4 class="h6">Music Provided</h4>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="feature-item">
+                        <i class="bi bi-chat-dots feature-icon"></i>
+                        <h4 class="h6">Easy Communication</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Areas -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="display-6 fw-bold mb-4">Serving Toronto & Surrounding Areas</h2>
+                    <p class="lead text-muted">USA Hunks provides professional male entertainment throughout Toronto, Ontario and the Greater Toronto Area. From downtown Toronto to Mississauga, Brampton, and beyond, we deliver the same high-quality service and exceptional performers.</p>
+                    <p class="text-muted">Available throughout the GTA. Contact us to confirm availability in your location.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Box -->
     <div class="container">
-      <h1 class="display-4">An Unforgettable Male Revue</h1>
-      <p class="lead">A high-energy, interactive experience that brings the stage to you.</p>
+        <div class="cta-box" id="contact">
+            <h2 class="display-5 fw-bold mb-3">Ready to Book Your Toronto Event?</h2>
+            <p class="lead mb-4">Professional entertainment is just a phone call away</p>
+            <div class="row justify-content-center mt-4">
+                <div class="col-lg-6">
+                    <div class="bg-white text-dark p-4 rounded shadow-lg">
+                        <h3 class="mb-4">Contact Us Today</h3>
+                        <p class="mb-3"><i class="bi bi-telephone-fill text-danger me-2"></i> <strong>Call Now:</strong> Available for booking</p>
+                        <p class="mb-3"><i class="bi bi-envelope-fill text-danger me-2"></i> <strong>Email:</strong> bookings@usahunks.com</p>
+                        <p class="mb-4"><i class="bi bi-geo-alt-fill text-danger me-2"></i> <strong>Serving:</strong> Toronto & GTA</p>
+                        <a href="tel:" class="btn btn-primary-custom">Call to Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </header>
 
-  <section class="py-5">
-    <div class="container">
-      <h2 class="mb-4">The Experience</h2>
-      <p>
-        Step into a world of excitement, where anticipation meets the spotlight and the rhythm sets the tone for an electrifying evening. Our all-male strip shows are crafted to deliver a captivating mix of charm, charisma, and choreographed talent—all designed to create a thrilling event that lives long in memory. The hottest of hunks for male stripper locations like Las Vegas, Nashville, Miami, Atlanta, NYC, Austin, or Toronto Miguel private party male stripper Toronto Ontario.</a> 
-      </p>
-      <p>
-        From the moment the performance begins, the atmosphere shifts. Music pulses, energy rises, and the room becomes alive with bold moves and irresistible stage presence. The talent brings confidence, humor, and undeniable appeal—delivering not just a show, but a fully immersive encounter. These events are known for their vibrant energy and polished professionalism, maintaining a balance of tasteful seduction and fun-loving engagement.
-      </p>
-      <p>
-        Perfect for private parties, celebrations, or just a night to let loose, these performances blend intimacy with entertainment. Expect audience interaction, custom routines, and a high level of attention to detail. Each appearance is tailored to the group's energy, ensuring everyone feels included and excited.
-      </p>
-      <p>
-        Discretion is key. We understand the importance of privacy and seamless coordination. Whether hosted in a private space or an off-the-map venue, the performance is delivered with respect for confidentiality and comfort. From booking to the final encore, professionalism is the foundation of every step.
-      </p>
-      <p>
-        The performers are handpicked for their talent, physique, and stage confidence. With diverse backgrounds and personalities, the cast brings variety to every show—some with a comedic twist, others with a seductive flair. No matter the preference, each guest is sure to be drawn into a night of laughter, surprise, and magnetic entertainment.
-      </p>
-      <p>
-        Whether it's a milestone celebration or a spontaneous night of indulgence, our performances are curated for moments that deserve to feel extraordinary. No crowded clubs, no impersonal routines—just pure connection, up-close charisma, and unforgettable excitement.
-      </p>
-    </div>
-  </section>
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-warning mb-3">USA HUNKS TORONTO</h5>
+                    <p>Premium male entertainment and strip shows for bachelorette parties, birthdays, and special events in Toronto, Ontario.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-warning mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="/" class="text-warning text-decoration-none">Home</a></li>
+                        <li><a href="/services" class="text-warning text-decoration-none">Services</a></li>
+                        <li><a href="/about" class="text-warning text-decoration-none">About</a></li>
+                        <li><a href="/reviews" class="text-warning text-decoration-none">Reviews</a></li>
+                        <li><a href="#contact" class="text-warning text-decoration-none">Book Now</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-warning mb-3">Contact</h5>
+                    <p><i class="bi bi-envelope me-2"></i> bookings@usahunks.com</p>
+                    <p><i class="bi bi-geo-alt me-2"></i> Toronto, Ontario</p>
+                    <p><i class="bi bi-telephone me-2"></i> Available 7 Days a Week</p>
+                </div>
+            </div>
+            <hr class="bg-secondary">
+            <div class="text-center pt-3">
+                <p>&copy; 2024 USA Hunks Toronto. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
-  <footer class="bg-dark text-white text-center py-4">
-    <div class="container">
-      <p class="mb-0">Copyright &copy; 2025 | All Rights Reserved</p>
-    </div>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
